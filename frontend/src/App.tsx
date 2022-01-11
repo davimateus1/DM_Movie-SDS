@@ -3,7 +3,7 @@ import Listing from "Pages/Listing";
 import Form from "Pages/Form";
 import Navbar from "Components/Navbar";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Navbar />

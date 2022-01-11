@@ -1,7 +1,8 @@
+import Pagination from "Components/Pagination";
 
 const Listing = () => {
   return(
-    <h1>Página de listagem</h1>
+    <Pagination />
   );
 };
 
