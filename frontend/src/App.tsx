@@ -1,7 +1,8 @@
+import Navbar from "Components/Navbar";
 
-function App() {
+const App = () => {
   return (
-  <h1>DM Movie - Página principal</h1>
+    <Navbar />
   );
 }
 

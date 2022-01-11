@@ -1,0 +1,41 @@
+header{
+    background-color: var(--color-primary);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.dm-movie_nav_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.dm-movie_nav_content h1{
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.dm-movie_nav_content svg{
+    font-size: 24px;
+}
+
+
+.dm-movie_contact_container{
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.dm-movie_contact_container:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.dm-movie_contact_link{
+    margin: 0 0 0 10px;
+    font-size: 12px;
+}
