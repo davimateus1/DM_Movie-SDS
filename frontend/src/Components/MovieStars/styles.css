@@ -1,0 +1,10 @@
+.dm-movie_stars_container {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dm-movie_stars_container svg {
+    width: 22px;
+    height: auto;
+}

@@ -1,0 +1,18 @@
+.dm-movie_score_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dm-movie_score_value {
+    margin: 0;
+    color: #FFBB3A;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dm-movie_score_count {
+    font-size: 12px;
+    color: #989898;
+    margin: 4px 0 10px 0;
+}
