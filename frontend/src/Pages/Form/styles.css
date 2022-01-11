@@ -1,0 +1,58 @@
+.dm-movie_form_container {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.dm-movie_form {
+    width: calc(100% - 20px);
+}
+
+.dm-movie_form_group {
+    margin-bottom: 20px;
+}
+
+.dm-movie_form_group label {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.dm-movie_form_btn_container {
+    display: flex;
+    justify-content: center;
+}
+
+.dm-movie_movie_card_image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.dm-movie_card_bottom_container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.dm-movie_card_bottom_container h3 {
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+
+.dm-movie_btn {
+    background-color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: var(--color-primary);
+}
