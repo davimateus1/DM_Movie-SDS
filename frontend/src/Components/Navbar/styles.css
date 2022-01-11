@@ -16,6 +16,12 @@ header{
     margin: 0;
     font-weight: 700;
     font-size: 24px;
+    transition: all 0.5s;
+}
+
+.dm-movie_nav_content h1:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .dm-movie_nav_content svg{
