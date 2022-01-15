@@ -7,39 +7,38 @@ import { BASE_URL } from "utils/requests";
 
 const Listing = () => {
   const [pageNumber, setPageNumber] = useState(0);
+  const [page, setPage] = useState<MoviePage>({
+    content: [],
+    last: true,
+    totalPages: 0,
+    totalElements: 0,
+    size: 12,
+    number: 0,
+    first: true,
+    numberOfElements: 0,
+    empty: true,
+  });
 
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/movies?size=12&page=0`)
+      .get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=title`)
       .then((res) => {
         const data = res.data as MoviePage;
-        console.log(data)
-        setPageNumber(data.number);
+        setPage(data);
       })
       .catch();
-  }, []);
+  }, [pageNumber]);
 
   return (
     <>
-      <p>{pageNumber}</p>
       <Pagination />
       <div className="container">
         <div className="row">
-          <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-            <MovieCard />
-          </div>
-          <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-            <MovieCard />
-          </div>
-          <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-            <MovieCard />
-          </div>
-          <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-            <MovieCard />
-          </div>
-          <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-            <MovieCard />
-          </div>
+          {page.content.map((movie) => (
+            <div key={movie.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+              <MovieCard movie={movie} />
+            </div>
+          ))}
         </div>
       </div>
     </>
