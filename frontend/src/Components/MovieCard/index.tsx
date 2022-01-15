@@ -17,7 +17,7 @@ const MovieCard = ( { movie } : Props ) => {
       />
       <div className="dm-movie_card_bottom_container">
         <h3>{movie.title}</h3>
-        <MovieScore />
+        <MovieScore count={movie.count} score={movie.score}/>
         <Link to={`/form/${movie.id}`}>
           <div className="btn btn-primary dm-movie_btn">Avaliar</div>
         </Link>
