@@ -14,7 +14,7 @@ const MovieScore = ( { score, count } : Props ) => {
         {score > 0 ? score.toFixed(1) : "-"}
       </p>
       <MovieStars score={score}/>
-      <p className="dm-movie_score_count">{count} avaliações</p>
+      <p className="dm-movie_score_count">{count} Avaliações</p>
     </div>
   );
 };

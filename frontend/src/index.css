@@ -10,7 +10,7 @@
 }
 
 html, body {
-    background-color: #E5E5E5;
+    background-image: linear-gradient(to right, #f89d88, rgb(36, 34, 34), #f89d88);
 }
 
 a, a:hover {

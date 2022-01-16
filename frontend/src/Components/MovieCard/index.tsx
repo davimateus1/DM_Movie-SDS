@@ -9,7 +9,7 @@ type Props = {
 const MovieCard = ( { movie } : Props ) => {
 
   return (
-    <div>
+    <div className="moviekk">
       <img
         className="dm-movie_movie_card_image"
         src={movie.image}

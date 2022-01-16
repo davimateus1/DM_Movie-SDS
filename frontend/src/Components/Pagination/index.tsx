@@ -1,5 +1,5 @@
-import { ReactComponent as Arrow } from "assets/img/arrow.svg";
 import { MoviePage } from "types/movie";
+import { MdKeyboardArrowLeft} from 'react-icons/md'
 import "./styles.css";
 
 type Props = {
@@ -16,7 +16,7 @@ const Pagination = ({ page, onChange }: Props) => {
           disabled={page.first}
           onClick={() => onChange(page.number - 1)}
         >
-          <Arrow />
+          <MdKeyboardArrowLeft />
         </button>
         <p>{`${page.number + 1} de ${page.totalPages}`}</p>
         <button 
@@ -24,7 +24,7 @@ const Pagination = ({ page, onChange }: Props) => {
         disabled={page.last}
         onClick={() => onChange(page.number + 1)}
         >
-          <Arrow className="dm-movie_flip_horizontal" />
+          <MdKeyboardArrowLeft className="dm-movie_flip_horizontal" />
         </button>
       </div>
     </div>

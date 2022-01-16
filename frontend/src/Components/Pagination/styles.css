@@ -27,10 +27,16 @@
     align-items: center;
     border: 1px solid var(--color-primary);
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.dm-movie_pagination_button:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
 }
 
 .dm-movie_pagination_button svg {
-    filter: brightness(0) saturate(100%) invert(26%) sepia(19%) saturate(7395%) hue-rotate(234deg) brightness(89%) contrast(92%);
+    color: var(--color-primary);
 }
 
 .dm-movie_pagination_button:disabled {
@@ -40,6 +46,7 @@
 
 .dm-movie_pagination_button:disabled svg {
     filter: none;
+    color: #c2c2c2;
 }
 
 .dm-movie_pagination_container p {
