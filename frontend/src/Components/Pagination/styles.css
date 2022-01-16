@@ -21,7 +21,7 @@
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,8 @@
 
 .dm-movie_pagination_container p {
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
     color: var(--color-primary);
 }
 
