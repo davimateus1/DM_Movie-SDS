@@ -40,11 +40,11 @@
     border: 1px solid rgba(159, 159, 159, 0.79);
 }
 
-.moviekk{
+.dm-movie_total_card{
     transition: all 0.1s;
 }
 
-.moviekk:hover{
+.dm-movie_total_card:hover{
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
